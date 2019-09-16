@@ -1,0 +1,42 @@
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ nav {
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+ }
+ figure img {
+     width: 85vw;
+     display: block;
+     margin: auto;
+ }
+ figcaption {
+     text-align: center;
+     font-size: x-large;
+     font-weight: 900;
+ }
+ h1 {
+     text-align: center;
+     font-size: larger;
+ }
+ div {
+     text-align: center;
+ }
+.modal {
+    position: absolute;
+    width: 290px;
+    display: grid;
+    height: 190px;
+    visibility: hidden;
+    background-color: coral;
+    margin: auto;
+    top: 40%;
+    left: 15%;
+}
+ a.fa.fa-bars,
+ .far.fa-window-close {
+     justify-self: end;
+     margin-right: 5%;
+ }
