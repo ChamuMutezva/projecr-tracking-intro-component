@@ -1,4 +1,5 @@
 # Frontend Mentor - Project tracking intro component
+Preview link https://chamumutezva.github.io/projecr-tracking-intro-component/
 
 ![Design preview for the Project tracking intro component coding challenge](./design/desktop-preview.jpg)
 
