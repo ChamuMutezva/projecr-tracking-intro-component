@@ -37,6 +37,16 @@
 }
  a.fa.fa-bars,
  .far.fa-window-close {
-     justify-self: end;
-     margin-right: 5%;
+    justify-self: end;
+    margin-right: 5%;
+    margin-top: 15%;
  }
+
+nav img{
+    margin-top: 15%;
+    margin-left: 5%;
+}
+
+header {
+    
+}
