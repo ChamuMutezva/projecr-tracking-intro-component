@@ -1,49 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- displays site properly based on user's device -->
 
-    <title>Frontend Mentor | Project tracking intro component</title>
-    <link
-      rel="stylesheet prefetch"
-      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css"
-    />
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Condensed" rel="stylesheet" />
+  <title>Frontend Mentor | Project tracking intro component</title>
+  <link rel="stylesheet prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" />
+  <!-- href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css" -->
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header>
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-      <div class="modal">
-        <a class="product" href=""> Product </a>
-        <a class="features" href="">Features   </a>
-        <a class="pricing" href=""> Pricing </a>
-        <hr/>
-        <a class="login" href=""> Login </a>    
+<body>
+  <header>
+    <nav>
+      <img src="images/logo.svg" />
+      <img class="toggleMenu" src="images/bars-solid.svg" />
+    </nav>
+    <div class="modal">
+      <a class="product" href=""> Product </a>
+      <a class="features" href="">Features </a>
+      <a class="pricing" href=""> Pricing </a>      
+      <a class="login" href=""> Login </a>
     </div>
+  </header>
+  <main>
 
-      <nav>
-        <img src="images/logo.svg" />
-        <a class="fa fa-bars"></a>
-        <a class="far fa-window-close"></a>        
-      </nav>
+    <figure>
+      <img src="images/illustration-devices.svg" alt="" />
+    </figure>
 
-      <figure>
-        <img src="images/illustration-devices.svg" alt="" />             
-      </figure>
-    </header>
-    <main>
-        <p class="dashboard"><span>New</span> Monograph Dashboard</p>
+    <section class="track">
+      <p class="dashboard"><span>New</span> Monograph Dashboard</p>
       <h1>Powerful insights into your team</h1>
       <p>
         Project planning and time tracking for agile teams
@@ -52,16 +46,11 @@
         <input type="button" value="Schedule a demo " />
         <span> to see a live preview</span>
       </div>
-    </main>
+    </section>
+  </main>
 
-    <footer>
-      <p class="attribution">
-        Challenge by
-        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-          >Frontend Mentor</a
-        >. Coded by <a href="#">Your Name Here</a>.
-      </p>
-    </footer>
-     <script src="main.js"></script>
-  </body>
+
+  <script src="main.js"></script>
+</body>
+
 </html>

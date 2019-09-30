@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+@media only screen and (min-width: 240px) {
  nav {
      display: grid;
+     margin-bottom: 9%;
      grid-template-columns: 1fr 1fr;
  }
  figure img {
@@ -67,12 +69,13 @@ hr {
     top: 17%;
     left: 12%;
 }
- a.fa.fa-bars,
- .far.fa-window-close {
+ .toggleMenu {
     justify-self: end;
-    margin-right: 5%;
+    margin-right: 15%;
     margin-top: 15%;
+    height: 5vh;
  }
+
 
 nav img{
     margin-top: 15%;
@@ -80,10 +83,12 @@ nav img{
 }
 
 header {    
-    background: linear-gradient(90deg, transparent 50%, hsl(207, 33%, 95%) 50%);    
+    background: linear-gradient(90deg, transparent 50%, hsl(207, 33%, 95%) 50%);  
+    font-family: "Barlow", sans-serif;
 }
 main {
     margin-top: 20px;
+    font-family: "Barlow Condensed", sans-serif;
 }
 figure {
     padding-bottom: 10%
@@ -100,4 +105,35 @@ p span {
     color: white;
     border-radius: 45px;
     /* margin-bottom: 10px; */
+}
+}
+@media only screen and (min-width: 600px) {
+    .toggleMenu {
+       display: none;
+    }
+    .modal {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        position: relative;
+        visibility: visible;
+        top: 0%;
+        left: 0;
+        height: 25px;
+        width: 100%;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    a.product {
+         margin-top: 0%; 
+    }
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    figure img {
+        width: 50vw;
+        
+    }
+
 }
