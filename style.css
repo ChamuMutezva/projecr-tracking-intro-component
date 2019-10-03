@@ -25,9 +25,11 @@
      font-weight: 900;
  }
  h1 {
-     margin: 5%;
+     margin-left: 12%;
+     margin-top: 5%;
+     margin-right: 5%;
      font-size: xx-large;
-     font-family: "Barlow", sans-serif;
+     font-family: "Barlow Condensed", sans-serif;
      text-transform: uppercase;
      font-weight: 900;
  }
@@ -35,7 +37,9 @@
      
  }
  p {
-    margin: 5%;
+    margin-left: 12%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 span {
     text-transform: uppercase;
@@ -43,7 +47,7 @@ span {
 input[type="button"] {
     width: 45vw;
     height: 6vh;
-    margin-left: 5%;
+    margin-left: 12%;
     margin-right: 5%;
     background-color: red;
     border-radius: 10px;
@@ -90,11 +94,7 @@ hr {
 
 nav img{
     margin-top: 15%;
-    margin-left: 5%;
-}
-
-h1 {      
-   
+    margin-left: 25%;
 }
 main {
     margin-top: 20px;
@@ -105,20 +105,32 @@ figure {
     padding-bottom: 10%
 }
 p.dashboard {
-   margin-left: 5%;
+   margin-left: 12%;
     text-transform: uppercase;
     margin-bottom: 10px
 }
-p span {
+p span.newText {
     width: 30px;
-    padding: 6px 10px 6px 10px;
+    padding: 2px 14px 2px 14px;
     background: black;
     color: white;
     border-radius: 45px;
     /* margin-bottom: 10px; */
 }
+
+p span.mono {
+    opacity: 0.5;
 }
-@media only screen and (min-width: 600px) {
+
+p:last-child {
+    opacity: 0.5;
+}
+}
+@media only screen and (min-width: 680px) {
+    hr {        
+        display: none;
+        /* visibility: hidden; */
+    }
     .toggleMenu {
        display: none;
     }
@@ -154,13 +166,18 @@ p span {
         width: 25vw;       
     }
     span {        
-        font-size: small;
+        font-size: large;
     }
     section.track {
         width: 100%;
     }
-    p.dashboard {       
-        font-size: x-large;
+    p {       
+        font-size: large;
     }
 
+}
+@media only screen and (min-width: 960px) {
+    input[type="button"] {
+        width: 15vw;       
+    } 
 }
