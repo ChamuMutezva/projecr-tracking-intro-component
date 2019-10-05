@@ -4,11 +4,22 @@
     box-sizing: border-box;
 }
 @media only screen and (min-width: 240px) {
-    body {       
+    body::before {
+        content: '';
+        width: 53vw;
+        height: 63vh;
+        background-color: #eef3f6;
+        position: absolute;
+        z-index: -1;
+        right: 0;
+        border-radius: 0 0 0 50px;
+    }
+
+  /*  body {       
         background: linear-gradient(90deg, transparent 50%, hsl(207, 33%, 95%) 50%);         
         background-size: 100vw 66vh;
         background-repeat: no-repeat;
-    }
+    }*/
 
     img.mainLogo {
         height: 5vh;
@@ -180,15 +191,21 @@ p span.mono {
         width: 100%;
     }
     p {       
-        font-size: large;
+        font-size: 1.5rem;
     }
 
 }
 @media only screen and (min-width: 960px) {
     input[type="button"] {
-        width: 15vw;       
+        width: 15vw;  
+        font-size: 1em;     
     } 
     h1 {
         font-size: 3rem;
+    }
+
+    span {
+        font-size: 1.2rem;
+        letter-spacing: 0.2em;
     }
 }
